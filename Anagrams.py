@@ -1,3 +1,4 @@
+#1
 class Solution(object):
     def isAnagram(self, s, t):
         if len(s) != len(t):
@@ -20,6 +21,13 @@ class Solution(object):
 
         for key in frequency1:
             if key not in frequency2 or frequency1[key] != frequency2[key]:
-                return False  
-              
+                return False         
         return True
+    
+#2
+class Solution(object):
+    def isAnagram2(self, s, t):
+        if len(s) != len(t):
+            return False
+    
+        return sorted(s) == sorted(t)
