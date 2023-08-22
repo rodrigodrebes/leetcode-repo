@@ -6,7 +6,7 @@ def removeDuplicates(nums) -> int:
   if len(nums) == 0:
     return 0
 
-  unique_count = 1  # O primeiro elemento é sempre único
+  unique_count = 1  
   current = nums[0]
 
   for i in range(1, len(nums)):
